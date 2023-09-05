@@ -1,27 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+/* Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Inter', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General */
+
+.flexStart {
+    @apply flex justify-start items-center;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.paddings {
+    @apply px-5 py-6 lg:px-20;
+}
+
+.text-small {
+  @apply text-sm font-medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+  @apply w-full bg-light-white paddings flex-col gap-20;
+}
+
+.footer_column {
+  @apply flex-1 min-w-max flex flex-col gap-3 text-sm;
+}
+
+.footer_copyright {
+  @apply max-sm:flex-col w-full text-sm font-normal;
+}
+
+
+
+
+
+
+
+
+
+
+/* Project Details */
+
+
+
+
+
+
+
+
+
+
+
+/**
+  * Project Actions 
+***/
+
+
+
+
+
+
+
+
+
+/**
+  * Related Project Card 
+***/
+
+
+
+
+
+
+
+
+
+/**
+  * Custom Menu 
+***/
+
